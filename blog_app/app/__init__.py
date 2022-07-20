@@ -3,6 +3,14 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager 
 
+import firebase_admin
+from firebase_admin import credentials, firestore
+
+cred = credentials.Certificate("blogapp-5ce40-1a56d0f8bb3c.json")
+firebase_admin.initialize_app(cred)
+
+firestore_db = firestore.client()
+
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
 
