@@ -24,7 +24,7 @@ def profile():
 def editor(project_id):
     current_user.current_project = project_id
     project = firestore_db.collection(current_user.id).document(project_id).get().to_dict()
-    return render_template('editor.html', project = project)
+    return render_template('editor_read.html', project = project)
 
 @main.route('/add_item/<item_type>')
 @login_required

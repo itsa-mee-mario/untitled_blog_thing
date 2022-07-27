@@ -1,0 +1,21 @@
+{
+    "title": "lesson title",
+    "text-block": "text one",
+    "image-block": "image one url",
+    "question-block": 
+    {
+        "question": "question one",
+        "answer-wrong": "answer one",
+        "answer-right": "answer two"
+    },
+    "poll-block" : 
+    {
+        "question": "question one",
+        "answers": 
+        {
+            "answer one" : 0,
+            "answer two" : 0
+        }
+    },
+    "heading-block": "heading one"
+}
